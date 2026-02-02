@@ -1,13 +1,21 @@
 import './App.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, Navigate, RouterProvider} from 'react-router-dom'
 import Login from './pages/Login'
 import Register from './pages/Register'
 
+
+const DefualtRoute = () => {
+  const authData = JSON.parse(localStorage.getItem('authData'));
+  if(authData){
+    return <Navigate to="/Login" replace/>
+  }
+  return <Navigate to="/Register" replace/>
+}
 function App() {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <Login />
+      element: <DefualtRoute />
     },
     {
       path:'/Login',
