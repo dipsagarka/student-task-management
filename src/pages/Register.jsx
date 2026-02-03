@@ -3,7 +3,7 @@ import "../index.css";
 import "./Register.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { useEffect } from "react";
+
 
 const Register = () => {
   const [formData, setFormData] = React.useState({
