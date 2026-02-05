@@ -13,7 +13,7 @@ const TaskList = ({ tasks }) => {
           <p>{task.description}</p>
 
           <div className="task-meta">
-            <span>Due: {task.duedate}</span>
+            <span>Due: {task.dueDate}</span>
             <span
               className={`priority-badge priority-${task.priority.toLowerCase()}`}
             >
