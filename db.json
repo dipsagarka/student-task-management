@@ -1,14 +1,6 @@
 {
   "tasks": [
     {
-      "id": "1",
-      "title": "First Task",
-      "description": "Second task added",
-      "dueDate": "2026-02-06",
-      "priority": "low",
-      "completed": false
-    },
-    {
       "id": "2",
       "title": "Second Task",
       "description": "Second Task Added",
@@ -23,6 +15,14 @@
       "dueDate": "2026-02-14",
       "priority": "low",
       "completed": false
+    },
+    {
+      "id": "4",
+      "title": "forth task",
+      "description": "forth task added",
+      "dueDate": "2026-02-09",
+      "priority": "low",
+      "completed": true
     }
   ]
 }
