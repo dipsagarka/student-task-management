@@ -2,24 +2,24 @@
   "tasks": [
     {
       "id": "1",
-      "title": "First Task",
+      "title": "FIRST TASK",
       "description": "First Task Added",
-      "dueDate": "2026-02-06",
+      "dueDate": "2026-02-09",
       "priority": "high",
       "completed": false
     },
     {
-      "id": "3",
-      "title": "Third Task",
-      "description": "Third Task Added",
-      "dueDate": "2026-02-06",
-      "priority": "low",
+      "id": "2",
+      "title": "SECOND TASK",
+      "description": "Second Task Added",
+      "dueDate": "2026-02-09",
+      "priority": "medium",
       "completed": false
     },
     {
-      "id": "4",
-      "title": "FIFTH Task",
-      "description": "FIFTH task are added",
+      "id": "3",
+      "title": "THIRD TASK ",
+      "description": "Third Task Added",
       "dueDate": "2026-02-09",
       "priority": "low",
       "completed": false
