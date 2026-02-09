@@ -28,7 +28,7 @@ const Dashboard = () => {
     loadTasks();
   }, []);
 
-  // ➕ / ✏️ add or update task in UI
+  // add or update task in UI
   const handleTaskSave = (task, isEdit) => {
     if (isEdit) {
       setTasks(tasks.map(t => (t.id === task.id ? task : t)));

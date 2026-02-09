@@ -71,7 +71,7 @@ const TaskForm = ({ editTask, setEditTask, onTaskSaved }) => {
     try {
       let savedTask;
 
-      // ✏️ EDIT
+      //  EDIT
       if (editTask) {
         const res = await fetch(
           `http://localhost:3000/tasks/${editTask.id}`,
@@ -83,7 +83,7 @@ const TaskForm = ({ editTask, setEditTask, onTaskSaved }) => {
         );
         savedTask = await res.json();
 
-        // 🔁 update localStorage
+        //  update localStorage
         const storedTasks =
           JSON.parse(localStorage.getItem("tasks")) || [];
         const updatedLocal = storedTasks.map((t) =>
@@ -95,7 +95,7 @@ const TaskForm = ({ editTask, setEditTask, onTaskSaved }) => {
         setEditTask(null);
       }
 
-      // ➕ ADD
+      //  ADD
       else {
         const res = await fetch("http://localhost:3000/tasks", {
           method: "POST",
@@ -105,7 +105,7 @@ const TaskForm = ({ editTask, setEditTask, onTaskSaved }) => {
         alert("Task added successfully");
         savedTask = await res.json();
 
-        // 💾 save to localStorage
+        //  save to localStorage
         const storedTasks =
           JSON.parse(localStorage.getItem("tasks")) || [];
         localStorage.setItem(
@@ -191,7 +191,7 @@ const TaskForm = ({ editTask, setEditTask, onTaskSaved }) => {
               value={formData.priority}
               onChange={handleChange}
             >
-              <option value="low">Low</option>
+              <option value="low" style={{}}>Low</option>
               <option value="medium">Medium</option>
               <option value="high">High</option>
             </select>
